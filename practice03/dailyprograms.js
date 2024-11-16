@@ -8,7 +8,10 @@ polyfill,function currying
 ===========================================================================================
 
 Run-length encoding (find/print frequency of letters in a string) -----  Done (practice-3/pattern01)
-Sort an array of 0's, 1's and 2's in linear time complexity
+Sort an array of 0's, 1's and 2's in linear time complexity ---- Done (practice-3/pattern02)
+Let there is a character set - 'a', 'b', 'c', 'd'. How many unique words can be formed using the character set (print them) and just to keep in mind no character should repeat in the word. The example should come up like abcd, cbad etc.
+Catches - 1. All words should be unique, The length of word should match the array length, there should not be duplication of characters in any formulated words. ---- Done (practice-3/pattern02)
+
 Checking Anagrams (check whether two string is anagrams or not)
 Relative sorting algorithm
 Finding subarray with given sum
