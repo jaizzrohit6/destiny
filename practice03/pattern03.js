@@ -3,5 +3,37 @@
 
 //interview question
 
-
-let arr = ['a','b','c','d']
+// Function to generate all permutations of a character set
+function generatePermutations(chars) {
+    const results = [];
+  
+    function permute(arr, memo = []) {
+      if (arr.length === 0) {
+        results.push(memo.join(""));
+        return;
+      }
+  
+      for (let i = 0; i < arr.length; i++) {
+        const current = arr.slice();
+        const next = current.splice(i, 1);
+        permute(current, memo.concat(next));
+      }
+    }
+  
+    permute(chars);
+    return results;
+  }
+  
+  // Define the character set
+  const charSet = ['a', 'b', 'c', 'd'];
+  
+  // Generate all unique permutations
+  const uniqueWords = generatePermutations(charSet);
+  
+  // Print the unique words
+  console.log("Unique words:");
+  uniqueWords.forEach(word => console.log(word));
+  
+  // Print the total number of unique words
+  console.log("\nTotal number of unique words:", uniqueWords.length);
+  
