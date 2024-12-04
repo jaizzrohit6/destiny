@@ -1,19 +1,19 @@
 //equalize array 
 
-// function equalizeArray(arr){
-//     let newArr=[]
-//     for(let i = 0 ; i< arr.length;i++){
-//         if(newArr.includes(arr[i])){
-//             newArr.push(arr[i])
-//         }
-//         else{
-//             if(newArr.length==0){
-//                 newArr.push(arr[i])
-//             }
-//         }
-//     }
-//     return (arr.length -newArr.length)
-// }
+function removeUniqueArray(arr){
+    let newArr=[]
+    for(let i = 0 ; i< arr.length;i++){
+        if(newArr.includes(arr[i])){
+            newArr.push(arr[i])
+        }
+        else{
+            if(newArr.length==0){
+                newArr.push(arr[i])
+            }
+        }
+    }
+    return (arr.length -newArr.length)
+}
 
 
 function equalizeArray(arr){
