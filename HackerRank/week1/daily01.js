@@ -14,8 +14,6 @@ function removeUniqueArray(arr){
     }
     return (arr.length -newArr.length)
 }
-
-
 function equalizeArray(arr){
     let obj={}
     for(let i = 0 ; i< arr.length;i++){
